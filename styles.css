@@ -1,0 +1,527 @@
+/* ===================== */
+/*       الأساسيات        */
+/* ===================== */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ===================== */
+/*       الهيدر          */
+/* ===================== */
+header {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+/* ===================== */
+/*       الأقسام         */
+/* ===================== */
+section {
+    padding: 80px 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff9900;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* ===================== */
+/*       الإنجازات       */
+/* ===================== */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.achievement-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card i {
+    font-size: 3rem;
+    color: #ff9900;
+    margin-bottom: 15px;
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.achievement-card p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+/* ===================== */
+/*       اللاعبون        */
+/* ===================== */
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.player {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.player:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.player img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.player h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.player p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ===================== */
+/*       المعرض          */
+/* ===================== */
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===================== */
+/*       الأخبار         */
+/* ===================== */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.news-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* ===================== */
+/*       الفوتر          */
+/* ===================== */
+footer {
+    background: linear-gradient(135deg, #333, #000);
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+}
+
+/* ===================== */
+/*       التجاوب         */
+/* ===================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .players-grid, .news-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .swiper-container {
+        height: 300px;
+    }
+}
+
+/* ===================== */
+/*       مؤثرات إضافية   */
+/* ===================== */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    transition: background 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    background: #ffcc00;
+}
+
+
+/* ===================== */
+/*       الأزرار         */
+/* ===================== */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* لتحريك الأزرار إلى اليمين */
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #ff9900, #ffcc00);
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.signup-btn:hover {
+    background: #fff;
+    color: #ff9900;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* أيقونات Font Awesome */
+.btn i {
+    font-size: 1.2rem;
+}
+
+
+
+/* ===================== */
+/*       تسجيل الدخول     */
+/* ===================== */
+#login {
+    padding: 80px 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+#login h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff9900;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+#login-form button {
+    padding: 10px;
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#login-form button:hover {
+    background: #ffcc00;
+}
+
+#login-form p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#login-form p a {
+    color: #ff9900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#login-form p a:hover {
+    color: #ffcc00;
+}
+
+/* ===================== */
+/*       تسجيل حساب جديد */
+/* ===================== */
+#register {
+    padding: 80px 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+#register h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ff9900;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#register-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#register-form .form-group label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#register-form .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#register-form .form-group input:focus {
+    border-color: #ff9900;
+    outline: none;
+}
+
+#register-form button {
+    padding: 10px;
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#register-form button:hover {
+    background: #ffcc00;
+}
+
+#register-form p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#register-form p a {
+    color: #ff9900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#register-form p a:hover {
+    color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .achievement-card i {
+        font-size: 2rem;
+    }
+
+    .achievement-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .achievement-card p {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .auth-buttons {
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 0;
+        }
+    
+        .btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
